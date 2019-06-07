@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final</title>
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'log_app/css/styles.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__link" href="/dashboard">Logo</a>
+            <div>
+                <a class="header__link" href="/logout">Logout</a>
+                <a class="header__link" href="/profile">Profile</a>
+            </div>
+        </header>
+
+        <div class="main__content">
+            <div>
+                <h1>Final Step</h1>
+            </div>
+            <div class="content">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="hidden" name="image" value="https://www.deeparteffects.com/images/generated/c838940e-fbf6-43de-947c-88459b5e5489.jpg">
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
