@@ -1,0 +1,27 @@
+.header {
+    color: blue;
+    display: flex;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 0px 1rem .7rem -1.45rem #111; 
+    
+    div {
+        height: 100%;
+        padding: .5rem;
+        box-sizing: border-box;
+
+        .header__link {
+            padding: 0 .5rem;
+        }
+    }
+
+    .header__link {
+        color: black;
+        text-decoration: none;
+        padding: .5rem;
+        vertical-align: center;
+    }
+}
