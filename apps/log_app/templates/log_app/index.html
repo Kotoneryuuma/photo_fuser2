@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login and Register</title>
     {% load static %}	
-    <link rel="stylesheet" href="{% static 'log_app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'log_app/css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'log_app/css/core_styles.css' %}">
 </head>
 <body>
@@ -24,7 +24,7 @@
     </ul>
     {% endif %}
     <div class="wrapper">
-        <div class="main-left">
+        <div class="main login">
             <h1>Registration</h1>
             <form action="/register" method="post">
                 {% csrf_token %}
@@ -52,7 +52,10 @@
             </form>
         </div>
 
-        <div class="main-right">
+        <div class="main line">
+        </div>
+
+        <div class="main login">
             <h1>Login</h1>
             <form action="/login" method="post">
                 {% csrf_token %}
