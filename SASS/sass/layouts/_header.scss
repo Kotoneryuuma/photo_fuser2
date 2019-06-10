@@ -8,6 +8,14 @@
     justify-content: space-between;
     box-shadow: 0px 1rem .7rem -1.45rem #111; 
     
+    a {
+        transition: .3s ease-in-out;
+
+        &:hover {
+            color: #F7941D;
+        }
+    }
+
     div {
         height: 100%;
         padding: .5rem;
@@ -23,5 +31,11 @@
         text-decoration: none;
         padding: .5rem;
         vertical-align: center;
+
+        img {
+            width: 75px;
+        }
     }
+
+    
 }

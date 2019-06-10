@@ -11,8 +11,7 @@
 </head>
 <body>
     {% if messages %}
-    <ul class="messages red">
-        <li>ERROR</li>
+    <ul class="messages">
         {% for message in messages %}
             <li {% if message.tags %} 
                     class="{{ message.tags }}"
@@ -20,10 +19,14 @@
                 {{ message }}
             </li>
         {% endfor %}
-        <li>ERROR</li>
     </ul>
     {% endif %}
     <div class="wrapper">
+        <div class="main logo">
+            <a class="header__link" href="/dashboard">
+                <img src="{% static 'log_app/images/photofuser.png' %}" alt="Photo Fuser Logo">
+            </a>
+        </div>
         <div class="main login">
             <h1>Registration</h1>
             <form action="/register" method="post">
@@ -52,8 +55,7 @@
             </form>
         </div>
 
-        <div class="main line">
-        </div>
+        <div class="main line"></div>
 
         <div class="main login">
             <h1>Login</h1>
